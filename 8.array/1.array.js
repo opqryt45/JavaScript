@@ -5,11 +5,11 @@ console.log(array);
 array = new Array(1, 2, 3); // 생성자 함수를 통해 배열을 만들 수 있다.
 console.log(array);
 
-array = Array.of(1, 2, 3, 4, 5, 6, 7, 8,)  // Array 에서 제공하는 .of 이라고하는 static 함수
+array = Array.of(1, 2, 3, 4, 5, 6, 7, 8)  // Array 에서 제공하는 .of 이라고하는 static 함수
 // * Returns a new array from a set of elements.
 console.log(array);
 
-const anotherArray = [1, 2, 3, 4, 5, 6, 7, 8]; // [] 배열리터럴을 이용해 만들 수 있다.
+const anotherArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // [] 배열리터럴을 이용해 만들 수 있다.
 console.log(anotherArray);
 array = Array.from(anotherArray);
 console.log(Array.from(anotherArray)); // 위 배열을 그대로 복사해서 만들어 줌
