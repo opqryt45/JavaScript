@@ -1,12 +1,12 @@
 let a = 0;
 console.log(a);
 
-a = 1;
+a = 2;
 console.log(a);
 
 let b;
 console.log(b);
 
-b = 2;   //재할당
+b = 3;   //재할당
 console.log(b);
 
