@@ -1,4 +1,4 @@
-let name ='apple';
+let name = 'apple';
 let color = 'red';
 let display = '🍎';
 let orrangeName = 'orange';
@@ -7,20 +7,19 @@ let orrangeName = 'orange';
 let apple = {
   name: 'apple',
   color: 'red',
-  display:'🍎'
+  display: '🍎',
 };
 console.log(apple);
 console.log(apple.name);
 console.log(apple.color);
 console.log(apple.display);
 
-let orange ={
-  name:'오렌지',
+let orange = {
+  name: '오렌지',
   color: 'orange',
-  display: '🍊'
+  display: '🍊',
 };
 console.log(orange);
 console.log(orange.name);
 console.log(orange.color);
 console.log(orange.display);
-
