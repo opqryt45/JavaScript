@@ -13,8 +13,8 @@ console.clear();
 //++a 값을 먼저 증가하고 필요한 연산을 함
 a = 0;
 let b = a++; //0이라는 값을 먼저 b에 할당하고 끝난다음에 1로 바뀌어있음.
-console.log(b);
-console.log(a); 
+console.log(b); // 0
+console.log(a); // 1
 
 c = 0;
 let d = c--;
