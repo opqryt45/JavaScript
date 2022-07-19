@@ -6,6 +6,7 @@ function add(a = 1, b = 2) {
   console.log(a);
   console.log(b);
   console.log(arguments); // 전달된 인자의 정보가 들어 있다.
+  // { '0': 2, '1': 3, '2': 3, '3': 4 } a와 b라는 이름으로 각각 맵핑이 되어있다.
   console.log(arguments[0]);
   console.log(arguments[1]);
   return a + b;

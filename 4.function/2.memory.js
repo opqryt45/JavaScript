@@ -3,7 +3,7 @@ function add(a,b){
   console.log(b);
   return a + b;
 }
-const sum = add; //함수의 이름을 어딘가에 할당한다는것은 함수를 가리키고있는 그 메모리 주소를 복사해서 할당하는 것과 동일하다.
+const sum = add; //❗️함수의 이름을 어딘가에 할당한다는것은 함수를 가리키고있는 그 메모리 주소를 복사해서 할당하는 것과 동일하다.❗️
 
 //console.log(add(3,5)); //함수를 호출할때는 소괄호로 인자를 입력해서 호출.
 console.log(add(1));
