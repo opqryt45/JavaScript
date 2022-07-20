@@ -71,7 +71,7 @@ iterate(10, cycle);
 iterate(10, double);
 
 //iterate(10, (num) => console.log(num));
-//iterate(10, (num) => console.log(num * 2));  <<이렇게 써도됨 . 
+//iterate(10, (num) => console.log(num * 2));  <<이렇게 써도됨 (위에 따로 작성 안하고)
 
 setTimeout(() => {      //setTimeout 이라는 고차함수에 의해서 타임이 끝났을때 함수가 callback 함수를 호출 해줌.
   console.log('3초뒤 이 함수가 실행될거에요');
