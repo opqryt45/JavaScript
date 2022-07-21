@@ -23,5 +23,6 @@ console.log(ellie);
 
 function changeName(obj) {
   //  이름부터 변경하는 느낌을 주도록!!
-  return { ...obj, name: 'Bob' }; // 반환할때는 새로운 오브젝트를 만들기!
+  return { ...obj, name: 'Bo2b' }; // 반환할때는 새로운 오브젝트를 만들기!
 }
+

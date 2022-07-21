@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Webpage</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #3474ff;
+      }
+
+      p {
+        font-size: 50px;
+      }
+
+      button {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>HEX CODE: #3474FF</p>
+      <button>Change Color</button>
+    </div>
+  </body>
+  <script>
+    /*
+
+  다음과 같은 조건을 만족하는 화면을 만들어 주세요!
+  
+  📌 버튼 클릭시 랜덤한 HEX CODE가 배경 색으로 변경되어야 합니다.
+  📌 현재 HEX CODE가 <p> 태그의 텍스트로 표시되어야 합니다.
+
+*/
+
+    const pElement = document.querySelector('p');
+    const divElement = document.querySelector('div');
+    const buttonElement = document.querySelector('button');
+
+    function getRandomColor() {
+      return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    buttonElement.addEventListener('click', function changeColor() {
+      divElement.style.backgroundColor = getRandomColor();
+    });
+
+    buttonElement.addEventListener('click', function changeText() {
+      pElement.textContent = `HEX CODE: ` + getRandomColor();
+    });
+  </script>
+</html>
