@@ -34,14 +34,8 @@
     </div>
   </body>
   <script>
-    /*
-
-  다음과 같은 조건을 만족하는 화면을 만들어 주세요!
-  
-  📌 버튼 클릭시 랜덤한 HEX CODE가 배경 색으로 변경되어야 합니다.
-  📌 현재 HEX CODE가 <p> 태그의 텍스트로 표시되어야 합니다.
-
-*/
+    // 📌 버튼 클릭시 랜덤한 HEX CODE가 배경 색으로 변경되어야 합니다.
+    // 📌 현재 HEX CODE가 <p> 태그의 텍스트로 표시되어야 합니다.
 
     const pElement = document.querySelector('p');
     const divElement = document.querySelector('div');
@@ -58,5 +52,36 @@
     buttonElement.addEventListener('click', function changeText() {
       pElement.textContent = `HEX CODE: ` + getRandomColor();
     });
+
+    /* 이 함수를 사용해도 됨
+        function hexGenerator() {
+      const hexNumbers = [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F'
+      ];
+
+      let result = "#";
+
+      for (var i = 0; i < 6; i += 1) {
+        const randomIndex = Math.floor(Math.random() * hexNumbers.length);
+        result += hexNumbers[randomIndex];
+      }
+
+      return result;
+      */
   </script>
 </html>
