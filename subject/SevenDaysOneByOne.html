@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SevenDays</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th {
+        border: 1px solid black;
+        width: 90px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+    </table>
+    <script>
+      /*
+  📌 일요일 부터 토요일까지 차례대로 보여져야 합니다.
+  📌 days 배열을 사용해야 합니다.
+
+  +---------------------------------------------+
+  |  일   |  월  |  화  |  수  |  목  |  금  |  토  |
+  +---------------------------------------------+
+*/
+
+      const days = ['일', '월', '화', '수', '목', '금', '토'];
+      const thTag = document.querySelectorAll('th');
+      const tr = document.querySelector('tr');
+
+      let i = -1;
+      setInterval(function oneByone() {
+        if (i++ < days.length) {
+          thTag[i].textContent = days[i];
+        } else {
+          clearInterval();
+        }
+      }, 500);
+    </script>
+  </body>
+</html>
